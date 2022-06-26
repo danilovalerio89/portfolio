@@ -4,9 +4,18 @@ import {
   NavStyled,
   AnchorStyled,
   HeaderWrapper,
+  ButtonTheme,
 } from "./style";
-
-function Header() {
+import { useCallback } from "react";
+import { HiMoon } from "react-icons/hi";
+import { CgSun } from "react-icons/cg";
+function Header({ setCurrentTheme, currentTheme }) {
+  const changeTheme = useCallback(
+    () => (currentTheme === "light" ? "dark" : "light"),
+    [currentTheme]
+  );
+  const icon =
+    currentTheme === "light" ? <HiMoon size={20} /> : <CgSun size={20} />;
   return (
     <HeaderWrapper>
       <HeaderStyled>
@@ -21,6 +30,9 @@ function Header() {
           <AnchorStyled href="#">PROJETOS</AnchorStyled>
           <AnchorStyled href="#">CONTATOS</AnchorStyled>
         </NavStyled>
+        <ButtonTheme onClick={() => setCurrentTheme(changeTheme())}>
+          {icon}
+        </ButtonTheme>
       </HeaderStyled>
     </HeaderWrapper>
   );

@@ -4,39 +4,49 @@ export const HeaderWrapper = styled.div`
   position: fixed;
   width: 100%;
   border-bottom: 1px solid var(--Dark-1);
+  background-color: ${(props) => props.theme.backgroundColor};
+  color: ${(props) => props.theme.color};
+  transition: background-color 0.5s linear, color 0.5s linear;
 `;
 
 export const HeaderStyled = styled.header`
-  margin: 0 auto;
-  width: 80%;
   display: flex;
-  justify-content: space-between;
-  height: 3.75rem;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+  height: 4rem;
   cursor: default;
-  p,
-  b,
-  a {
-    font-size: var(--Font-3);
-  }
 `;
 export const Title = styled.div`
-  width: 40%;
+  /* width: 40%; */
 `;
-
+export const ButtonTheme = styled.button`
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: none;
+  transition: background-color 0.5s linear, color 0.5s linear;
+  color: ${(props) => props.theme.buttonThemeColor};
+  background-color: ${(props) => props.theme.buttonThemeBackgroundColor};
+`;
 export const NavStyled = styled.nav`
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  min-width: 60%;
+  justify-content: space-evenly;
+  width: 100%;
 `;
 
 export const AnchorStyled = styled.a`
   display: block;
   position: relative;
-  color: var(--White);
+  color: ${(props) => props.theme.color};
+  transition: background-color 0.5s linear, color 0.5s linear;
+  font-size: var(--fontSize-1);
   &:after {
     content: "";
     position: absolute;
