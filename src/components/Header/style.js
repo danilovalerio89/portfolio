@@ -18,7 +18,7 @@ export const HeaderStyled = styled.header`
   cursor: default;
 `;
 export const Title = styled.div`
-  /* width: 40%; */
+  font-size: var(--fontSize-3);
 `;
 export const ButtonTheme = styled.button`
   position: absolute;

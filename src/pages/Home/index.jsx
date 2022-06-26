@@ -15,10 +15,10 @@ function Home() {
     <ThemeProvider theme={themes[currentTheme]}>
       <Header setCurrentTheme={setCurrentTheme} currentTheme={currentTheme} />
 
-      {/* <MainContainer>
+      <MainContainer>
         <AboutMe />
         <Tecnology />
-      </MainContainer> */}
+      </MainContainer>
       {/* <main> */}
       {/* <Projects /> */}
       {/* </main> */}

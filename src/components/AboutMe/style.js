@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const AboutMeSection = styled.section`
   display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const AboutMeDiv = styled.div`
@@ -24,13 +26,14 @@ export const AboutMeDiv = styled.div`
   }
 `;
 export const FigureContainer = styled.figure`
+  margin: 25px 0;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   img {
-    border-radius: 5px;
+    border-radius: 50%;
     width: 80%;
     height: 80%;
   }
