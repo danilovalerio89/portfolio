@@ -18,11 +18,9 @@ function Home() {
       <MainContainer>
         <AboutMe />
         <Tecnology />
+        <Projects />
+        <Footer />
       </MainContainer>
-      {/* <main> */}
-      {/* <Projects /> */}
-      {/* </main> */}
-      {/* <Footer /> */}
     </ThemeProvider>
   );
 }

@@ -10,7 +10,7 @@ function Tecnology() {
   const { tecnology } = useTecnolgy();
 
   return (
-    <TecnologySectionWrap>
+    <TecnologySectionWrap id="Tecnology">
       <HeaderSectionTecnology>
         <h1>Tecnologias</h1>
       </HeaderSectionTecnology>

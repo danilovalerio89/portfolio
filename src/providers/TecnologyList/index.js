@@ -44,7 +44,7 @@ const tecnologysArr = [
     image: NODE,
   },
   {
-    name: "Postgre",
+    name: "PostgreSQL",
     image: POSTGRE,
   },
   {

@@ -25,10 +25,10 @@ function Header({ setCurrentTheme, currentTheme }) {
           </p>
         </Title>
         <NavStyled>
-          <AnchorStyled href="#">SOBRE</AnchorStyled>
-          <AnchorStyled href="#">TECNOLOGIAS</AnchorStyled>
-          <AnchorStyled href="#">PROJETOS</AnchorStyled>
-          <AnchorStyled href="#">CONTATOS</AnchorStyled>
+          <AnchorStyled href="#AboutMe">SOBRE</AnchorStyled>
+          <AnchorStyled href="#Tecnology">TECNOLOGIAS</AnchorStyled>
+          <AnchorStyled href="#Projects">PROJETOS</AnchorStyled>
+          <AnchorStyled href="#Contact">CONTATOS</AnchorStyled>
         </NavStyled>
         <ButtonTheme onClick={() => setCurrentTheme(changeTheme())}>
           {icon}

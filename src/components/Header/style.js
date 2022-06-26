@@ -47,6 +47,7 @@ export const AnchorStyled = styled.a`
   color: ${(props) => props.theme.color};
   transition: background-color 0.5s linear, color 0.5s linear;
   font-size: var(--fontSize-1);
+  font-weight: 500;
   &:after {
     content: "";
     position: absolute;
@@ -67,47 +68,3 @@ export const AnchorStyled = styled.a`
     transform: scale(1.1);
   }
 `;
-
-//Box Line Border
-// color: var(--Dark-5);
-// padding: 8px;
-// position: relative;
-// display: block;
-// overflow: hidden;
-
-// &::before {
-//   position: absolute;
-//   content: "";
-//   left: 0;
-//   bottom: 0;
-//   height: 2px;
-//   width: 100%;
-//   border-bottom: 2px solid transparent;
-//   border-left: 2px solid transparent;
-//   box-sizing: border-box;
-//   transform: translateX(100%);
-// }
-// &::after {
-//   position: absolute;
-//   content: "";
-//   top: 0;
-//   left: 0;
-//   height: 2px;
-//   width: 100%;
-//   border-top: 2px solid transparent;
-//   border-right: 2px solid transparent;
-//   box-sizing: border-box;
-//   transform: translateX(-100%);
-// }
-
-// &:hover::before {
-//   border-color: white;
-//   height: 100%;
-//   transform: translateX(0);
-//   transition: 0.2s transform linear, 0.2s height linear 0.2s;
-// }
-// &:hover::after {
-//   border-color: white;
-//   height: 100%;
-//   transform: translateX(0);
-//   transition: 0.2s transform linear, 0.2s height linear 0.2s;

@@ -1,21 +1,27 @@
+import { useProjects } from "../../providers/ProjectsList";
+import ProjectCard from "../ProjectsCard";
+import { ProjectsHeader, ProjectsWrapper, ProjectCardWrapper } from "./style";
+
 function Projects() {
+  const { projects } = useProjects();
+
   return (
-    <>
-      <section>
-        <div>
-          Habilidades : Lorem ipsum dolor sit amet consectetur, adipisicing
-          elit. Illum magnam eligendi nostrum fugiat laudantium, rem delectus a
-          voluptas quis quam in nulla totam natus sequi? Repellat illo aut
-          consequuntur excepturi?
-        </div>
-        <div>
-          Projetos : Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Quidem deserunt earum quisquam dicta magnam pariatur inventore maiores
-          quod doloremque! Iusto non officiis sint blanditiis amet debitis
-          consequatur obcaecati, praesentium neque.
-        </div>
-      </section>
-    </>
+    <ProjectsWrapper id="Projects">
+      <ProjectsHeader>
+        <h1>Projetos</h1>
+      </ProjectsHeader>
+      <ProjectCardWrapper>
+        {projects.map((item, index) => (
+          <ProjectCard
+            key={index}
+            name={item.name}
+            image={item.image}
+            vercerlLink={item.vercerlLink}
+            repositoryLink={item.repositoryLink}
+          />
+        ))}
+      </ProjectCardWrapper>
+    </ProjectsWrapper>
   );
 }
 export default Projects;

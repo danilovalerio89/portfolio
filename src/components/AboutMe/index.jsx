@@ -10,7 +10,7 @@ import {
 function AboutMe() {
   return (
     <>
-      <AboutMeSection>
+      <AboutMeSection id="AboutMe">
         <AboutMeWrapperDiv>
           <AboutMeDiv>
             <h1>Olá, eu sou o Danilo (ele/dele)</h1>
