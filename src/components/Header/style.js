@@ -41,7 +41,7 @@ export const NavStyled = styled.nav`
   width: 100%;
 `;
 
-export const AnchorStyled = styled.a`
+export const AnchorStyled = styled.p`
   display: block;
   position: relative;
   color: ${(props) => props.theme.color};

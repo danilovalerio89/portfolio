@@ -9,6 +9,7 @@ import {
 import { useCallback } from "react";
 import { HiMoon } from "react-icons/hi";
 import { CgSun } from "react-icons/cg";
+import { HashLink as Link } from "react-router-hash-link";
 function Header({ setCurrentTheme, currentTheme }) {
   const changeTheme = useCallback(
     () => (currentTheme === "light" ? "dark" : "light"),
@@ -25,10 +26,18 @@ function Header({ setCurrentTheme, currentTheme }) {
           </p>
         </Title>
         <NavStyled>
-          <AnchorStyled href="#AboutMe">SOBRE</AnchorStyled>
-          <AnchorStyled href="#Tecnology">TECNOLOGIAS</AnchorStyled>
-          <AnchorStyled href="#Projects">PROJETOS</AnchorStyled>
-          <AnchorStyled href="#Contact">CONTATOS</AnchorStyled>
+          <Link smooth to="#AboutMe">
+            <AnchorStyled>SOBRE</AnchorStyled>
+          </Link>
+          <Link smooth to="#Tecnology">
+            <AnchorStyled>TECNOLOGIAS</AnchorStyled>
+          </Link>
+          <Link smooth to="#Projects">
+            <AnchorStyled>PROJETOS</AnchorStyled>
+          </Link>
+          <Link smooth to="#Contact">
+            <AnchorStyled>CONTATOS</AnchorStyled>
+          </Link>
         </NavStyled>
         <ButtonTheme onClick={() => setCurrentTheme(changeTheme())}>
           {icon}
