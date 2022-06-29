@@ -8,30 +8,26 @@ const projectsArr = [
   {
     name: "Nu Kenzie",
     image: NUKENZIE,
-    vercerlLink:
-      "https://react-entrega-s1-nu-kenzie-danilovalerio89.vercel.app/",
+    vercerlLink: "https://nu-kenzie-alpha.vercel.app/",
     repositoryLink: "https://github.com/danilovalerio89/Nu-Kenzie",
   },
   {
     name: "Kenzie Hub",
     image: KENZIEHUB,
-    vercerlLink:
-      "https://react-entrega-s2-kenzie-hub-danilovalerio89.vercel.app/",
-    repositoryLink: "https://github.com/danilovalerio89/kenzie-hub",
+    vercerlLink: "https://kenzie-hub-jet.vercel.app/",
+    repositoryLink: "https://github.com/danilovalerio89/Kenzie-Hub",
   },
   {
     name: "Kenzie Shop",
     image: KENZIESHOP,
-    vercerlLink:
-      "https://react-entrega-s3-kenzieshop-danilovalerio89.vercel.app/",
-    repositoryLink: "https://github.com/danilovalerio89/kenzie-shop",
+    vercerlLink: "https://kenzie-shop-liard.vercel.app/",
+    repositoryLink: "https://github.com/danilovalerio89/Kenzie-Shop",
   },
   {
     name: "Kenzie Burguer",
     image: KENZIEBURGUER,
-    vercerlLink:
-      "https://react-entrega-s1-hamburgueria-da-kenzie-danilovalerio89.vercel.app/",
-    repositoryLink: "https://github.com/danilovalerio89/kenzie-burguer",
+    vercerlLink: "https://kenzie-burguer-one.vercel.app/",
+    repositoryLink: "https://github.com/danilovalerio89/Kenzie-Burguer",
   },
 ];
 
