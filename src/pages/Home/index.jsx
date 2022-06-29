@@ -9,16 +9,18 @@ import { ThemeProvider } from "styled-components";
 import { themes } from "../../styles/themes";
 
 function Home() {
-  const [currentTheme, setCurrentTheme] = useState("light");
+  const [currentTheme, setCurrentTheme] = useState("dark");
 
   return (
     <ThemeProvider theme={themes[currentTheme]}>
       <Header setCurrentTheme={setCurrentTheme} currentTheme={currentTheme} />
-
-      <MainContainer>
+      <MainContainer id="AboutMe">
         <AboutMe />
         <Tecnology />
-        <Projects />
+        <Projects
+          setCurrentTheme={setCurrentTheme}
+          currentTheme={currentTheme}
+        />
         <Footer />
       </MainContainer>
     </ThemeProvider>

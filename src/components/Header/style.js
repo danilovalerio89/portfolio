@@ -15,10 +15,23 @@ export const HeaderStyled = styled.header`
   align-items: center;
   justify-content: space-evenly;
   height: 4rem;
+
   cursor: default;
+  @media (min-width: 440px) {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 90%;
+  }
 `;
 export const Title = styled.div`
   font-size: var(--fontSize-3);
+  @media (min-width: 1024px) {
+    font-size: var(--fontSize-4);
+  }
 `;
 export const ButtonTheme = styled.button`
   position: absolute;
@@ -32,6 +45,13 @@ export const ButtonTheme = styled.button`
   transition: background-color 0.5s linear, color 0.5s linear;
   color: ${(props) => props.theme.buttonThemeColor};
   background-color: ${(props) => props.theme.buttonThemeBackgroundColor};
+  @media (min-width: 440px) {
+    top: 15px;
+    right: 15px;
+  }
+  @media (min-width: 768px) {
+    top: 20px;
+  }
 `;
 export const NavStyled = styled.nav`
   box-sizing: border-box;
@@ -39,6 +59,10 @@ export const NavStyled = styled.nav`
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    max-width: 50%;
+  }
 `;
 
 export const AnchorStyled = styled.p`
@@ -66,5 +90,8 @@ export const AnchorStyled = styled.p`
   }
   &:hover::after {
     transform: scale(1.1);
+  }
+  @media (min-width: 1024px) {
+    font-size: var(--fontSize-2);
   }
 `;

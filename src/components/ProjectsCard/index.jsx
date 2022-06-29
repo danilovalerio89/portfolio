@@ -8,21 +8,17 @@ import {
 function ProjectCard({ name, image, vercerlLink, repositoryLink }) {
   return (
     <ProjectCardWrapper>
-      <h1>{name}</h1>
+      <h3>{name}</h3>
       <FigureWrapper>
         <img src={image} alt={name} />
       </FigureWrapper>
       <ButtonWrapper>
-        <ButtonProjects>
-          <a href={vercerlLink} target="_blank" rel="noopener noreferrer">
-            Ver
-          </a>
+        <ButtonProjects onClick={() => window.open(vercerlLink)}>
+          Ver
         </ButtonProjects>
 
-        <ButtonProjects>
-          <a href={repositoryLink} target="_blank" rel="noopener noreferrer">
-            Código
-          </a>
+        <ButtonProjects onClick={() => window.open(repositoryLink)}>
+          Código
         </ButtonProjects>
       </ButtonWrapper>
     </ProjectCardWrapper>

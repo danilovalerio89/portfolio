@@ -3,6 +3,7 @@ const lightTheme = {
   backgroundColor: "var(--White)",
   buttonThemeBackgroundColor: "var(--Black)",
   buttonThemeColor: "var(--White)",
+  borderColor: "0px 0px 10px 0px var(--Black)",
 };
 
 const darkTheme = {
@@ -10,6 +11,7 @@ const darkTheme = {
   backgroundColor: "var(--Black)",
   buttonThemeBackgroundColor: "var(--White)",
   buttonThemeColor: "var(--Black)",
+  borderColor: "0px 0px 10px 0px var(--White)",
 };
 
 export const themes = {

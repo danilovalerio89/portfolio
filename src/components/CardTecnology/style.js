@@ -10,6 +10,14 @@ export const CardWrapper = styled.div`
   img {
     width: 50%;
   }
+  @media (min-width: 440px) {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+  @media (min-width: 770px) {
+    max-width: 20%;
+    margin: 0 0 20px 0;
+  }
 `;
 
 export const FigureWrapper = styled.div`

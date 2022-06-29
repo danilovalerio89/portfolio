@@ -27,7 +27,7 @@ const projectsArr = [
     repositoryLink: "https://github.com/danilovalerio89/kenzie-shop",
   },
   {
-    name: "Nu Kenzie",
+    name: "Kenzie Burguer",
     image: KENZIEBURGUER,
     vercerlLink:
       "https://react-entrega-s1-hamburgueria-da-kenzie-danilovalerio89.vercel.app/",
