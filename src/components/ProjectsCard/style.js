@@ -69,6 +69,7 @@ export const ButtonWrapper = styled.div`
   }
 `;
 export const ButtonProjects = styled.button`
+  z-index: 0;
   display: block;
   height: 25px;
   width: 25%;

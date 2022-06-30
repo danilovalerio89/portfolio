@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const HeaderWrapper = styled.div`
   position: fixed;
+  z-index: 1;
   width: 100%;
   border-bottom: 1px solid var(--Black-1);
   background-color: ${(props) => props.theme.backgroundColor};
