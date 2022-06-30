@@ -21,7 +21,7 @@ export default createGlobalStyle`
     --White-1: #f5f5f5;
     --White : #FFFFFF;
 
-   
+    
 }
 
 a{

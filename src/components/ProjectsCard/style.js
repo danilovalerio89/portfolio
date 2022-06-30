@@ -63,21 +63,43 @@ export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
   margin: 10px 0;
+  position: relative;
   @media (min-width: 768px) {
     margin: 20px 0;
   }
 `;
 export const ButtonProjects = styled.button`
+  display: block;
   height: 25px;
   width: 25%;
   border-radius: 5px;
-  transition: background-color 0.5s linear, color 0.5s linear;
-  background-color: ${(props) => props.theme.buttonThemeBackgroundColor};
-  color: ${(props) => props.theme.buttonThemeColor};
+  color: var(--Black);
+  border: ${(props) => props.theme.buttonCard.cardBorder};
+  background-color: ${(props) => props.theme.buttonCard.backGround};
+  letter-spacing: 1px;
+  position: relative;
+  transition: all 0.35s;
+  span {
+    position: relative;
+    z-index: 2;
+  }
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: ${(props) => props.theme.buttonCard.hoverBackground};
+    transition: all 0.35s;
+  }
+
   &:hover {
-    transition: all 0.3s ease;
-    color: var(--White);
-    background-color: var(--Black-1);
+    color: ${(props) => props.theme.buttonCard.hoverColor};
+  }
+
+  &:hover:after {
+    width: 100%;
   }
   @media (min-width: 768px) {
     font-weight: 600;

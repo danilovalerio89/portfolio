@@ -15,10 +15,10 @@ function ProjectCard({ name, image, vercerlLink, repositoryLink }) {
       </FigureWrapper>
       <ButtonWrapper>
         <ButtonProjects onClick={() => window.open(vercerlLink)}>
-          Ver
+          <span>Ver</span>
         </ButtonProjects>
         <ButtonProjects onClick={() => window.open(repositoryLink)}>
-          Código
+          <span>Código</span>
         </ButtonProjects>
       </ButtonWrapper>
     </ProjectCardWrapper>
