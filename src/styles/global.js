@@ -13,7 +13,6 @@ export default createGlobalStyle`
     --SecondaryFont: 'Poppins', sans-serif;
 
     //Colors:
-    --Dark-5: #000000;
     --Dark-4: #1C1A1A;
     --Dark-3: #2A2A2A;
     --Dark-2: #4B4A54;
@@ -23,9 +22,6 @@ export default createGlobalStyle`
     --White : #FFFFFF;
 
     //Font-Size:
-    --fontSize-6: 3.052rem;
-    --fontSize-5: 2.441rem;
-    --fontSize-4: 1.953rem;
     --fontSize-3: 1.563rem;
     --fontSize-2: 1.25rem;
     --fontSize-1: 0.8rem;

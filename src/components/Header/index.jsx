@@ -2,7 +2,6 @@ import {
   HeaderStyled,
   Title,
   NavStyled,
-  AnchorStyled,
   HeaderWrapper,
   ButtonTheme,
 } from "./style";
@@ -16,7 +15,11 @@ function Header({ setCurrentTheme, currentTheme }) {
     [currentTheme]
   );
   const icon =
-    currentTheme === "light" ? <HiMoon size={20} /> : <CgSun size={20} />;
+    currentTheme === "light" ? (
+      <HiMoon size={"100%"} />
+    ) : (
+      <CgSun size={"100%"} />
+    );
   return (
     <HeaderWrapper>
       <HeaderStyled>
@@ -27,16 +30,16 @@ function Header({ setCurrentTheme, currentTheme }) {
         </Title>
         <NavStyled>
           <Link smooth to="#AboutMe">
-            <AnchorStyled>SOBRE</AnchorStyled>
+            SOBRE
           </Link>
           <Link smooth to="#Tecnology">
-            <AnchorStyled>TECNOLOGIAS</AnchorStyled>
+            TECNOLOGIAS
           </Link>
           <Link smooth to="#Projects">
-            <AnchorStyled>PROJETOS</AnchorStyled>
+            PROJETOS
           </Link>
           <Link smooth to="#Contact">
-            <AnchorStyled>CONTATOS</AnchorStyled>
+            CONTATOS
           </Link>
         </NavStyled>
         <ButtonTheme onClick={() => setCurrentTheme(changeTheme())}>

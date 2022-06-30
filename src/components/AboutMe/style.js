@@ -5,7 +5,6 @@ export const AboutMeSection = styled.section`
   flex-direction: column;
   align-items: center;
   padding: 0 25px;
-  height: 85vh;
   h1 {
     font-size: var(--Font-3);
     font-family: var(--SecondaryFont);
@@ -29,6 +28,7 @@ export const AboutMeSection = styled.section`
     margin: 0 auto;
   }
   @media (min-width: 768px) {
+    height: 85vh;
     padding: 0;
     max-width: 80%;
     margin: 0 auto;
@@ -41,13 +41,14 @@ export const AboutMeSection = styled.section`
 
 export const AboutMeDiv = styled.div`
   h1 {
-    font-size: var(--fontSize-2);
-    font-family: var(--SecondaryFont);
-    font-weight: 600;
+    font-size: 1.125rem;
+    font-family: var(--PrimaryFont);
+    font-weight: 700;
   }
   h3 {
-    margin: 8px 0;
+    font-size: 0.95rem;
     font-weight: 600;
+    margin: 15px 0;
     text-decoration: underline;
     text-underline-offset: 5px;
   }
@@ -59,13 +60,23 @@ export const AboutMeDiv = styled.div`
   @media (min-width: 768px) {
     min-width: 60%;
     margin: 0 auto;
+    h1 {
+      font-size: 1.3rem;
+    }
+    h3 {
+      font-size: 1.125rem;
+      margin: 20px 0;
+    }
   }
   @media (min-width: 1024px) {
     h1 {
-      font-size: var(--fontSize-3);
+      font-size: 2.2rem;
     }
     h3 {
-      font-size: var(--fontSize-2);
+      font-size: 1.65rem;
+    }
+    p {
+      font-size: 1.2rem;
     }
   }
 `;
@@ -91,9 +102,17 @@ export const FigureContainer = styled.figure`
       max-height: 180px;
     }
   }
+  @media (min-width: 1024px) {
+    img {
+      border-radius: 50%;
+      max-width: 300px;
+      max-height: 225px;
+    }
+  }
 `;
 
 export const KenzieAcademyText = styled.b`
+  font-family: var(--SecondaryFont);
   text-decoration: underline;
   text-underline-offset: 5px;
   text-transform: uppercase;

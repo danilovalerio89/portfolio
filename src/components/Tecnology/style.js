@@ -3,16 +3,21 @@ import styled from "styled-components";
 export const HeaderSectionTecnology = styled.header`
   display: flex;
   width: 100%;
-
   justify-content: center;
   padding: 40px 0;
   h1 {
-    font-size: var(--fontSize-2);
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+    }
   }
   @media (min-width: 1024px) {
     padding: 75px 0;
     h1 {
-      font-size: var(--fontSize-3);
+      font-size: 1.75rem;
     }
   }
 `;

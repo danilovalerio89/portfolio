@@ -12,11 +12,17 @@ export const FooterHeader = styled.header`
   text-align: center;
   padding: 10px 0 5px 0;
   h1 {
-    font-size: var(--fontSize-2);
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+    }
   }
   @media (min-width: 1024px) {
     h1 {
-      font-size: var(--fontSize-3);
+      font-size: 1.75rem;
     }
   }
 `;
