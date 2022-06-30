@@ -1,4 +1,4 @@
-import { FooterWrapper, FooterHeader, WrapperIcons } from "./style";
+import { FooterWrapper, FooterHeader, WrapperIcons, PStyled } from "./style";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 
@@ -16,7 +16,13 @@ function Footer() {
               window.open("https://github.com/danilovalerio89", "_blank")
             }
           />
-          <p>GitHub</p>
+          <PStyled
+            onClick={() =>
+              window.open("https://github.com/danilovalerio89", "_blank")
+            }
+          >
+            GitHub
+          </PStyled>
         </div>
         <div>
           <BsLinkedin
@@ -28,7 +34,16 @@ function Footer() {
               )
             }
           />
-          <p>LinkedIn</p>
+          <PStyled
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/danilo-valerio/",
+                "_blank"
+              )
+            }
+          >
+            LinkedIn
+          </PStyled>
         </div>
         <div>
           <AiOutlineMail size={40} />

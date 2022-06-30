@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeaderWrapper = styled.div`
   position: fixed;
   width: 100%;
-  border-bottom: 1px solid var(--Dark-1);
+  border-bottom: 1px solid var(--Black-1);
   background-color: ${(props) => props.theme.backgroundColor};
   color: ${(props) => props.theme.color};
   transition: background-color 0.5s linear, color 0.5s linear;
@@ -75,7 +75,7 @@ export const NavStyled = styled.ul`
       font-weight: 400;
     }
     @media (min-width: 1024px) {
-      font-size: var(--fontSize-2);
+      font-size: 1.25rem;
     }
   }
   @media (min-width: 768px) {

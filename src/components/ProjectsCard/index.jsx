@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   ProjectCardWrapper,
   FigureWrapper,
@@ -16,7 +17,6 @@ function ProjectCard({ name, image, vercerlLink, repositoryLink }) {
         <ButtonProjects onClick={() => window.open(vercerlLink)}>
           Ver
         </ButtonProjects>
-
         <ButtonProjects onClick={() => window.open(repositoryLink)}>
           Código
         </ButtonProjects>

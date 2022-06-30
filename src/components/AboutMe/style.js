@@ -88,6 +88,7 @@ export const FigureContainer = styled.figure`
   justify-content: center;
   align-items: center;
   img {
+    border: 3px solid var(--White);
     border-radius: 50%;
     width: 80%;
     height: 80%;
@@ -106,7 +107,7 @@ export const FigureContainer = styled.figure`
     img {
       border-radius: 50%;
       max-width: 300px;
-      max-height: 225px;
+      max-height: 300px;
     }
   }
 `;

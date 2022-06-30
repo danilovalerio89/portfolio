@@ -12,20 +12,16 @@ export default createGlobalStyle`
     --PrimaryFont:  'Inter', sans-serif;
     --SecondaryFont: 'Poppins', sans-serif;
 
-    //Colors:
-    --Dark-4: #1C1A1A;
-    --Dark-3: #2A2A2A;
-    --Dark-2: #4B4A54;
-    --Dark-1: #57595E;
-
+   
+    --Black-2: #111111;
+    --Black-1: #57595E;
     --Black : #000000; 
+
+    --White-2: #e5e5e5;
+    --White-1: #f5f5f5;
     --White : #FFFFFF;
 
-    //Font-Size:
-    --fontSize-3: 1.563rem;
-    --fontSize-2: 1.25rem;
-    --fontSize-1: 0.8rem;
-    --fontSize: 1rem;
+   
 }
 
 a{

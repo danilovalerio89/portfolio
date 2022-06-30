@@ -1,4 +1,4 @@
-import Img from "../../assets/img/filhote-de-jacare.webp";
+import Img from "../../assets/img/perfil.jpg";
 import {
   AboutMeDiv,
   AboutMeSection,

@@ -1,9 +1,10 @@
 const lightTheme = {
   color: "var(--Black)",
-  backgroundColor: "var(--White)",
+  backgroundColor: "var(--White-2)",
   buttonThemeBackgroundColor: "var(--Black)",
   buttonThemeColor: "var(--White)",
-  borderColor: "0px 0px 10px 0px var(--Black)",
+  borderCard: "1px solid var(--Black)",
+  cardBackGround: "var(--White-1)",
 };
 
 const darkTheme = {
@@ -11,7 +12,8 @@ const darkTheme = {
   backgroundColor: "var(--Black)",
   buttonThemeBackgroundColor: "var(--White)",
   buttonThemeColor: "var(--Black)",
-  borderColor: "0px 0px 10px 0px var(--White)",
+  borderCard: "1px solid var(--White)",
+  cardBackGround: "var(--Black-2)",
 };
 
 export const themes = {
