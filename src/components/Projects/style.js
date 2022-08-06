@@ -27,7 +27,7 @@ export const ProjectsHeader = styled.header`
     }
   }
   @media (min-width: 1024px) {
-    padding: 65px 0;
+    padding: 10% 0;
     h1 {
       font-size: 1.75rem;
     }

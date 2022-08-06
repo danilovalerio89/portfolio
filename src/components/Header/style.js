@@ -1,21 +1,21 @@
 import styled from "styled-components";
 
-export const HeaderWrapper = styled.div`
+export const HeaderWrapper = styled.header`
   position: fixed;
   z-index: 1;
   width: 100%;
-  border-bottom: 1px solid var(--Black-1);
+  border-bottom: 2px solid var(--clr-400);
   background-color: ${(props) => props.theme.backgroundColor};
   color: ${(props) => props.theme.color};
   transition: background-color 0.5s linear, color 0.5s linear;
 `;
 
-export const HeaderStyled = styled.header`
+export const HeaderStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 4rem;
+  padding: 10px 0;
   cursor: default;
 
   @media (min-width: 440px) {
@@ -25,20 +25,26 @@ export const HeaderStyled = styled.header`
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    max-width: 90%;
+    max-width: 80%;
   }
 `;
 export const Title = styled.div`
-  font-size: 1.5rem;
+  h1 {
+    font-size: var(--fs-500);
+  }
   @media (min-width: 768px) {
-    font-size: 1.75rem;
+    h1 {
+      font-size: var(--fs-600);
+    }
   }
   @media (min-width: 1024px) {
-    font-size: 2.5rem;
+    h1 {
+      font-size: var(--fs-700);
+    }
   }
 `;
 
-export const NavStyled = styled.ul`
+export const NavStyled = styled.nav`
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -50,7 +56,7 @@ export const NavStyled = styled.ul`
     position: relative;
     color: ${(props) => props.theme.color};
     transition: background-color 0.5s linear, color 0.5s linear;
-    font-size: 0.75rem;
+    font-size: var(--fs-100);
     font-weight: 500;
     &:after {
       content: "";
@@ -72,25 +78,30 @@ export const NavStyled = styled.ul`
       transform: scale(1.1);
     }
     @media (min-width: 768px) {
-      font-size: 1rem;
+      font-size: var(--fs-200);
       font-weight: 400;
     }
     @media (min-width: 1024px) {
-      font-size: 1.25rem;
+      font-size: var(--fs-200);
     }
   }
   @media (min-width: 768px) {
     flex-direction: row;
-    max-width: 50%;
+    max-width: 60%;
     justify-content: space-around;
+  }
+  @media (min-width: 1024px) {
+    max-width: 50%;
   }
 `;
 
 export const ButtonTheme = styled.button`
   cursor: pointer;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 30%;
+  left: 92%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
   height: 25px;
   width: 25px;
   border-radius: 50%;
@@ -99,12 +110,12 @@ export const ButtonTheme = styled.button`
   color: ${(props) => props.theme.buttonThemeColor};
   background-color: ${(props) => props.theme.buttonThemeBackgroundColor};
   @media (min-width: 440px) {
-    top: 15px;
-    right: 15px;
+    top: 35%;
     height: 35px;
     width: 35px;
   }
   @media (min-width: 768px) {
-    top: 15px;
+    top: 50%;
+    left: 97%;
   }
 `;

@@ -28,7 +28,7 @@ export const AboutMeSection = styled.section`
     margin: 0 auto;
   }
   @media (min-width: 768px) {
-    height: 85vh;
+    height: 70vh;
     padding: 0;
     max-width: 80%;
     margin: 0 auto;

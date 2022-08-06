@@ -9,37 +9,40 @@ import { useCallback } from "react";
 import { HiMoon } from "react-icons/hi";
 import { CgSun } from "react-icons/cg";
 import { HashLink as Link } from "react-router-hash-link";
+
 function Header({ setCurrentTheme, currentTheme }) {
   const changeTheme = useCallback(
     () => (currentTheme === "light" ? "dark" : "light"),
     [currentTheme]
   );
+
   const icon =
     currentTheme === "light" ? (
       <HiMoon size={"100%"} />
     ) : (
       <CgSun size={"100%"} />
     );
+
   return (
     <HeaderWrapper>
       <HeaderStyled>
         <Title>
-          <p>
-            &lt;Danilo<b>Valério</b>/&gt;
-          </p>
+          <h1>
+            &lt;<b>Danilo</b>/&gt;
+          </h1>
         </Title>
         <NavStyled>
           <Link smooth to="#AboutMe">
-            SOBRE
+            Sobre
           </Link>
           <Link smooth to="#Tecnology">
-            TECNOLOGIAS
+            Tecnologias
           </Link>
           <Link smooth to="#Projects">
-            PROJETOS
+            Projetos
           </Link>
           <Link smooth to="#Contact">
-            CONTATOS
+            Contatos
           </Link>
         </NavStyled>
         <ButtonTheme onClick={() => setCurrentTheme(changeTheme())}>

@@ -15,7 +15,7 @@ export const HeaderSectionTecnology = styled.header`
     }
   }
   @media (min-width: 1024px) {
-    padding: 75px 0;
+    padding: 10% 0;
     h1 {
       font-size: 1.75rem;
     }
@@ -40,6 +40,7 @@ export const TecnologySectionWrap = styled.section`
 
 export const DivTecnologyWrapper = styled.div`
   width: 100%;
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
