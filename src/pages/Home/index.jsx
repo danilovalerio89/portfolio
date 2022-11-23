@@ -16,12 +16,12 @@ function Home() {
       <Header setCurrentTheme={setCurrentTheme} currentTheme={currentTheme} />
       <MainContainer id="AboutMe">
         <AboutMe />
-        {/* <Tecnology />
+        <Tecnology />
         <Projects
           setCurrentTheme={setCurrentTheme}
           currentTheme={currentTheme}
         />
-        <Footer /> */}
+        <Footer />
       </MainContainer>
     </ThemeProvider>
   );
